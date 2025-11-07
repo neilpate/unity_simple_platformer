@@ -1,0 +1,20 @@
+# Blender
+
+Model item so that it is facing -Y direction (this is the normaly way in Blender)
+Make sure to Ctrl-A and apply all (rotations, scales etc)
+Export to FBX
+    Include:
+        Limit to Selected Objects
+        Object Types: Mesh
+    Transform:
+        Apply Scalings: FBX All
+        Forward: -Y Forward
+        Up: Z Up
+        Apply Unit: Ticked
+
+
+# Unity
+In FBX, go to Model. Default settings should be fine except:
+    Bake Axis Conversion: Ticked
+
+Now when you bring ther FBX into the scene the orientation should be in the normal Unity axes (+Z is forward, +Y is up)
